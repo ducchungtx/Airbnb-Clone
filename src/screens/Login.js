@@ -69,7 +69,7 @@ const styles = StyleSheet.create({
         fontSize: 26,
         color: colors.white,
         fontWeight: '300',
-        marginBottom: 40
+        marginBottom: 20
     },
     scrollView: {
         paddingLeft: 34,
@@ -80,7 +80,7 @@ const styles = StyleSheet.create({
     nextButton: {
         alignItems: 'flex-end',
         right: 20,
-        bottom: 0
+        bottom: 20
     }
 });
 
