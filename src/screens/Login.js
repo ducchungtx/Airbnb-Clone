@@ -15,12 +15,15 @@ import InputField from '../components/form/InputField';
 import NextArrowButton from '../components/buttons/NextArrowButton';
 
 class Login extends Component {
-    handleNextButton() {
+    static handleNextButton() {
         alert('Next Button Press');
     }
     render() {
         return (
-            <KeyboardAvoidingView style={styles.wrapper}>
+            <KeyboardAvoidingView
+                style={styles.wrapper}
+                behavior="padding"
+            >
                 <View style={styles.scrollViewWrapper}>
                     <ScrollView style={styles.scrollView}>
                         <Text style={styles.loginHeader}>Login</Text>
@@ -45,7 +48,7 @@ class Login extends Component {
                     </ScrollView>
                     <View style={styles.nextButton}>
                         <NextArrowButton
-                            handleNextButton={this.handleNextButton}
+                            handleNextButton={Login.handleNextButton}
                         />
                     </View>
                 </View>
